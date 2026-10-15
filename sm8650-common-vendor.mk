@@ -616,7 +616,6 @@ PRODUCT_PACKAGES += \
     libvpp_vqa_networks \
     libworker_pool \
     libasphere \
-    libquasar \
     libshoebox \
     vendor.qti.diaghal@1.0_vendor \
     vendor.qti.esepowermanager@1.0 \
