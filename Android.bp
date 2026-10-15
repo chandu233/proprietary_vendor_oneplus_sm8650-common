@@ -11865,6 +11865,15 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
+    name: "manifest_oplusSensor_aidl.xml",
+    owner: "oneplus",
+    src: "proprietary/odm/etc/vintf/manifest/manifest_oplusSensor_aidl.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    device_specific: true,
+}
+
+prebuilt_etc_xml {
     name: "manifest_oplus_charger_aidl.xml",
     owner: "oneplus",
     src: "proprietary/odm/etc/vintf/manifest/manifest_oplus_charger_aidl.xml",
@@ -14056,6 +14065,39 @@ cc_prebuilt_binary {
                 "liblog",
                 "libbase",
                 "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    device_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "vendor-oplus-hardware-oplusSensor-V1-service",
+    owner: "oneplus",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/bin/hw/vendor-oplus-hardware-oplusSensor-V1-service",
+            ],
+            shared_libs: [
+                "vendor.oplus.hardware.oplusSensor-V1-ndk",
+                "libbase",
+                "libcutils",
+                "libdumpstateutil",
+                "liblog",
+                "libbinder_ndk",
+                "libutils",
+                "libhardware",
                 "libc++",
                 "libc",
                 "libm",
