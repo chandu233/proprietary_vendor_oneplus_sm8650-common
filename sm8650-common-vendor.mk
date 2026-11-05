@@ -305,7 +305,6 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0-impl-qti \
     android.hardware.bluetooth@1.1-impl-qti \
     audio.bluetooth_qti.default \
-    audio.primary.pineapple \
     com.dsi.ant@1.0-impl \
     libqtigatekeeper \
     vendor.qti.hardware.alarm-impl \
@@ -345,10 +344,7 @@ PRODUCT_PACKAGES += \
     libadreno_utils \
     libadsp_default_listener \
     libadsprpc \
-    libagm \
-    libar-pal \
     libarmemlog \
-    libaudio_log_utils \
     libaudiofeaturestats \
     libbluetooth_audio_session_aidl_qti \
     libbluetooth_audio_session_qti \
@@ -584,7 +580,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.limits@1.0 \
     vendor.qti.hardware.limits@1.1 \
     vendor.qti.hardware.limits@1.2 \
-    vendor.qti.hardware.pal@1.0-impl \
     vendor.qti.hardware.perf2-V1-ndk \
     vendor.qti.hardware.qccsyshal@1.0_vendor \
     vendor.qti.hardware.qccsyshal@1.1_vendor \
@@ -704,7 +699,6 @@ PRODUCT_PACKAGES += \
     manifest_touch_aidl.xml \
     KmInstallKeybox \
     adsprpcd \
-    audioadsprpcd \
     cdsprpcd \
     cnss-daemon \
     diag-router \
